@@ -1,0 +1,29 @@
+.masonry-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-auto-rows: auto;
+	grid-gap: 16px;
+}
+
+.masonry-item {
+	width: 100%;
+	position: relative;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.small {
+	grid-row-end: span 1;
+}
+
+.medium {
+	grid-row-end: span 2;
+}
+
+.large {
+	grid-row-end: span 3;
+}

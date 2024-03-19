@@ -9,7 +9,7 @@ export const ImageContext = createContext();
 
 function App() {
   const [searchImage, setSearchImage] = useState('');
-  const { response, isLoading, error, fetchData } = useAxios(`search/photos?page=1&query=cats&client_id=${process.env.REACT_APP_ACCESS_KEY}`);
+  const { response, isLoading, error, fetchData } = useAxios(`search/photos?page=1&query=food&client_id=${process.env.REACT_APP_ACCESS_KEY}`);
 
   const value = {
     response,
@@ -21,12 +21,14 @@ function App() {
   }
 
   return (
-    <ImageContext.Provider value={value}>
-      <Jumbutron>
-        <SearchField />
-      </Jumbutron>
-      <Images />
-    </ImageContext.Provider>
+    <div className="App bg-slate-50">
+      <ImageContext.Provider value={value}>
+        <Jumbutron>
+          <SearchField />
+        </Jumbutron>
+        <Images />
+      </ImageContext.Provider>
+    </div>
   );
 }
 
