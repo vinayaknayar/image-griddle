@@ -9,6 +9,8 @@ export const ImageContext = createContext();
 
 function App() {
   const [searchImage, setSearchImage] = useState('');
+  console.log(process.env.REACT_APP_ACCESS_KEY)
+  console.log(process.env.REACT_APP_SECRET_KEY)
   const { response, isLoading, error, fetchData } = useAxios(`search/photos?page=1&query=food&client_id=${process.env.REACT_APP_ACCESS_KEY}`);
 
   const value = {

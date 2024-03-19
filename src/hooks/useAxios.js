@@ -11,6 +11,7 @@ const useAxios = (param) => {
   const fetchData = async (url) => {
     try {
       setIsLoading(true);
+      console.log(url)
       const res = await axios(url);
       setResponse(res.data.results);
     } catch (err) {
