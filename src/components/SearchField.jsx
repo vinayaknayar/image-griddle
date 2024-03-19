@@ -22,7 +22,7 @@ const SearchField = () => {
   }
 
   return (
-    <div className="flex">
+    <div className="flex mx-2">
       <input
         className="bg-gray-50 border border-[#083344] text-sm w-full indent-2 p-2.5 outline-none focus:border-[#083344] focus:ring-2 rounded-tl rounded-bl"
         type="search"
