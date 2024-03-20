@@ -23,7 +23,7 @@ function App() {
   }
 
   return (
-    <div className="App bg-slate-50">
+    <div className="App bg-slate-50 h-screen">
       <ImageContext.Provider value={value}>
         <Jumbutron>
           <SearchField />
