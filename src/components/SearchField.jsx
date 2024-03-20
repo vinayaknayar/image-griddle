@@ -9,7 +9,7 @@ const SearchField = () => {
     setSearchValue(e.target.value);
   }
   const handleButtonSearch = () => {
-    fetchData(`search/photos?page=1&query=${searchValue}&client_id=${process.env.ACCESS_KEY}`)
+    fetchData(`search/photos?page=1&query=${searchValue}&client_id=${process.env.REACT_APP_ACCESS_KEY}`)
     setSearchValue("");
     setSearchImage(searchValue);
   }
